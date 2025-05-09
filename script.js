@@ -1,5 +1,5 @@
-let period = 1000;
-let countdown = 30;
+let period = 2136;
+let countdown = 60;
 
 const colors = ["Red", "Green", "Violet"];
 const username = localStorage.getItem('user');
@@ -18,10 +18,10 @@ function updateCountdown() {
   if (countdown <= 0) {
     period++;
     document.getElementById("period").innerText = period;
-    countdown = 30;
+    countdown = 60;
     startPrediction();
   }
 }
 
 startPrediction();
-setInterval(updateCountdown, 1000);
+setInterval(updateCountdown, 2136);
