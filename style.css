@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.login-container {
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  margin: auto;
+}
+
+input {
+  padding: 10px;
+  margin-top: 10px;
+  width: 90%;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.violet {
+  background-color: violet;
+}
+
+.container {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.buttons button {
+  margin: 5px;
+  color: white;
+}
