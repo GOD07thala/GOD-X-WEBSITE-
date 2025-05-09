@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wingo Color Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login to Wingo</h2>
+    <input type="text" id="username" placeholder="Enter Username"><br><br>
+    <input type="password" id="password" placeholder="Enter Password"><br><br>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <script>
+    function login() {
+      const user = document.getElementById('username').value.trim();
+      const pass = document.getElementById('password').value;
+
+      if (user === '' || pass === '') {
+        alert("Please enter both username and password.");
+        return;
+      }
+
+      if (pass === 'GOD X HACKS') {
+        localStorage.setItem('user', user);
+        window.location.href = "home.html";
+      } else {
+        alert("Incorrect password. Try again.");
+      }
+    }
+  </script>
+</body>
+</html>
